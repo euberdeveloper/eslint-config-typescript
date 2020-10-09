@@ -1,0 +1,32 @@
+{
+  "name": "eslint-plugin-typescript",
+  "version": "0.0.1",
+  "description": "My personal configuration for eslint with typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/euberdeveloper/eslint-plugin-typescript.git"
+  },
+  "keywords": [
+    "eslint",
+    "plugin",
+    "eslint-plugin",
+    "typescript",
+    "lint",
+    "linter",
+    "rules"
+  ],
+  "author": "Eugenio Vinicio Berretta <euberdeveloper@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/euberdeveloper/eslint-plugin-typescript/issues"
+  },
+  "homepage": "https://github.com/euberdeveloper/eslint-plugin-typescript#readme",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0"
+  }
+}
