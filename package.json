@@ -1,6 +1,6 @@
 {
-  "name": "eslint-plugin-typescript",
-  "version": "0.0.1",
+  "name": "@euberdeveloper/eslint-config-typescript",
+  "version": "0.0.2",
   "description": "My personal configuration for eslint with typescript",
   "main": "index.js",
   "scripts": {
