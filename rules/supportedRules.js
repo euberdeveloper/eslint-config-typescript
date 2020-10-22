@@ -311,7 +311,7 @@ module.exports = {
 
     // Restricts the types allowed in boolean expressions.
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/strict-boolean-expressions.md
-    '@typescript-eslint/strict-boolean-expressions': ['error'],
+    //'@typescript-eslint/strict-boolean-expressions': ['error'],
 
     // Exhaustiveness checking in switch with union type.
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/switch-exhaustiveness-check.md
