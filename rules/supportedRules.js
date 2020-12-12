@@ -93,7 +93,28 @@ module.exports = {
 
     // Enforces naming conventions for everything across a codebase
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md
-    '@typescript-eslint/naming-convention': ['error'],
+    '@typescript-eslint/naming-convention': ['error', [
+        {
+            selector: 'default',
+            format: ['camelCase'],
+            leadingUnderscore: 'allow',
+            trailingUnderscore: 'allow',
+        },
+        {
+            selector: 'variable',
+            format: ['camelCase', 'UPPER_CASE'],
+            leadingUnderscore: 'allow',
+            trailingUnderscore: 'allow',
+        },
+        {
+            selector: 'typeLike',
+            format: ['PascalCase'],
+        },
+        {
+            selector: 'enumMember',
+            format: ['UPPER_CASE'],
+        },
+    ]],
 
     // Requires that .toString() is only called on objects which provide useful information when stringified
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-base-to-string.md
