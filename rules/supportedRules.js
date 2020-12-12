@@ -113,7 +113,7 @@ module.exports = {
         {
             selector: 'enumMember',
             format: ['UPPER_CASE'],
-        },
+        }
     ],
 
     // Requires that .toString() is only called on objects which provide useful information when stringified
