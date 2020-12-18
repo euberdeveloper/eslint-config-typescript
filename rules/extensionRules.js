@@ -152,6 +152,9 @@ module.exports = {
 
     // Enforces consistent spacing before function parenthesis. Fixable.
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/space-before-function-paren.md
-    'space-before-function-paren': 'off',
-    '@typescript-eslint/space-before-function-paren': ['error', 'never']
+    '@typescript-eslint/space-before-function-paren': ['error', {
+        'anonymous': 'never',
+        'named': 'never',
+        'asyncArrow': 'always'
+    }]
 };
