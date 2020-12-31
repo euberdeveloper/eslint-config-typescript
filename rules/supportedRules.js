@@ -51,7 +51,16 @@ module.exports = {
 
     // Require explicit accessibility modifiers on class properties and methods. Fixable.
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-member-accessibility.md
-    '@typescript-eslint/explicit-member-accessibility': ['error', { accessibility: 'explicit' }],
+    '@typescript-eslint/explicit-member-accessibility': ['error', {
+        accessibility: 'explicit',
+        overrides: {
+            accessors: 'no-public',
+            constructors: 'no-public',
+            methods: 'explicit',
+            properties: 'explicit',
+            parameterProperties: 'explicit'
+        }
+    }],
 
     // Require explicit return and argument types on exported functions' and classes' public class methods Recommended.
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
