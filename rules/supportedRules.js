@@ -337,7 +337,7 @@ module.exports = {
     // Requires Array#sort calls to always provide a compareFunction.
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/require-array-sort-compare.md
     '@typescript-eslint/require-array-sort-compare': ['error', {
-        ignoreStringArrays: false,
+        ignoreStringArrays: true
     }],
 
     // When adding two variables, operands must both be of type number or of type string. Recommended.
