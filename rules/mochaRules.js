@@ -59,7 +59,7 @@ module.exports = {
 
     // Disallow duplicate uses of a hook at the same level inside a describe. Recommended.
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/c52c1555ad4ce9b2f85373abff2126f63fbd1c53/docs/rules/no-sibling-hooks.md
-    'mocha/	no-sibling-hooks': ['error'],
+    'mocha/no-sibling-hooks': ['error'],
 
     // Disallow skipped mocha tests. Recommended.
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/c52c1555ad4ce9b2f85373abff2126f63fbd1c53/docs/rules/no-skipped-tests.md
