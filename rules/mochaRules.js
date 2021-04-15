@@ -39,7 +39,7 @@ module.exports = {
 
     // Disallow tests to be nested within other tests. Recommended.
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/c52c1555ad4ce9b2f85373abff2126f63fbd1c53/docs/rules/no-nested-tests.md
-    'mocha/cno-nested-tests': ['error'],
+    'mocha/no-nested-tests': ['error'],
 
     // Disallow pending/unimplemented mocha tests. Recommended.
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/c52c1555ad4ce9b2f85373abff2126f63fbd1c53/docs/rules/no-pending-tests.md
