@@ -1,6 +1,6 @@
 {
   "name": "@euberdeveloper/eslint-config-typescript",
-  "version": "4.8.1",
+  "version": "5.0.0",
   "description": "Euber's configuration for eslint with typescript",
   "main": "index.js",
   "scripts": {
