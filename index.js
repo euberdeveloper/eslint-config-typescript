@@ -5,7 +5,7 @@ const extensionRules = require('./rules/extensionRules');
 
 module.exports = {
     parser: '@typescript-eslint/parser',
-    plugins: ['@typescript-eslint', 'prettier'],
+    plugins: ['@typescript-eslint'],
     parserOptions: {
         ecmaVersion: 2020,
         sourceType: 'module'
@@ -13,8 +13,5 @@ module.exports = {
     rules: Object.assign({},
         supportedRules,
         extensionRules
-    ),
-    extends: [
-        'plugin:prettier/recommended'
-    ]
+    )
 };

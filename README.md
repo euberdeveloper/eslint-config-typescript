@@ -15,14 +15,33 @@ An eslint configuration, that uses the standard `@typescript-eslint/eslint-plugi
 # eslint with the typescript configuration
 npm i -D eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser
 
-# prettier with its eslint connector
-npm i -D prettier eslint-plugin-prettier eslint-config-prettier
-
 # this eslint configuration
 npm i -D @euberdeveloper/eslint-config-typescript
 ```
 
-### Add this `.prettierrc.js` file to your root:
+### Add this `.eslintrc.js` file to your root:
+
+```js
+const path = require('path');
+
+module.exports = {
+    parserOptions: {
+        project: path.join(__dirname, 'tsconfig.json') // The path to your tsconfig.json
+    },
+    extends: [ '@euberdeveloper/typescript' ]
+};
+```
+
+### If you want to use it with prettier
+
+Run this:
+
+```bash
+# prettier with its eslint connector
+npm i -D prettier eslint-plugin-prettier eslint-config-prettier
+```
+
+Add this `.prettierrc.js` file to your root:
 
 ```js
 module.exports = {
@@ -36,7 +55,7 @@ module.exports = {
 };
 ```
 
-### Add this `.eslintrc.js` file to your root:
+Change the `.eslintrc.js` file to this:
 
 ```js
 const path = require('path');
@@ -45,7 +64,11 @@ module.exports = {
     parserOptions: {
         project: path.join(__dirname, 'tsconfig.json') // The path to your tsconfig.json
     },
-    extends: [ '@euberdeveloper/typescript' ]
+    plugins: ['prettier'],
+    extends: [
+        '@euberdeveloper/typescript',
+        'plugin:prettier/recommended'
+    ]
 };
 ```
 
