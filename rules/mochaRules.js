@@ -19,7 +19,7 @@ module.exports = {
 
     // Disallow exports from test files. Recommended.
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/c52c1555ad4ce9b2f85373abff2126f63fbd1c53/docs/rules/no-exports.md
-    'mocha/no-exports': ['error'],
+    // 'mocha/no-exports': ['error'],
 
     // Disallow global tests. Recommended.
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/c52c1555ad4ce9b2f85373abff2126f63fbd1c53/docs/rules/no-global-tests.md
