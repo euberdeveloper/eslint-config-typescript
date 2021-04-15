@@ -5,8 +5,7 @@ My personal eslint configuration when used with Typescript.
 ## Brief description
 
 An eslint configuration, that uses the standard `@typescript-eslint/eslint-plugin` for the Typescript rules and
-`eslint-plugin-prettier` in order to connect with prettier.
-
+`eslint-plugin-mocha` for the mocha rules.
 ## How to use it
 
 ### Install the dependencies:
@@ -14,6 +13,9 @@ An eslint configuration, that uses the standard `@typescript-eslint/eslint-plugi
 ```bash
 # eslint with the typescript configuration
 npm i -D eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser
+
+# eslint mocha plugin
+npm i -D eslint-plugin-mocha
 
 # this eslint configuration
 npm i -D @euberdeveloper/eslint-config-typescript
